@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTF-ZO-DCi">
+                                <rect key="frame" x="60" y="554" width="254" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ogu-2G-E2R"/>
+                                </constraints>
+                                <state key="normal" title="开始识别图片文字">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_sample.png" translatesAutoresizingMaskIntoConstraints="NO" id="cfl-oh-dui">
+                                <rect key="frame" x="63" y="28" width="250" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="0Rb-xk-9nl"/>
+                                    <constraint firstAttribute="width" constant="250" id="QfC-YG-OFb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cfl-oh-dui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f01-a2-0pV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dTF-ZO-DCi" secondAttribute="trailing" constant="45" id="laG-Dq-sKP"/>
+                            <constraint firstItem="cfl-oh-dui" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rSi-Je-8FC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dTF-ZO-DCi" secondAttribute="bottom" constant="83" id="t9g-FY-gWA"/>
+                            <constraint firstItem="dTF-ZO-DCi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="tVV-yQ-7Q9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mButton" destination="dTF-ZO-DCi" id="5ni-tr-Fnw"/>
+                        <outlet property="mImageView" destination="cfl-oh-dui" id="BXc-og-D7n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_sample.png" width="700" height="1022"/>
+    </resources>
+</document>

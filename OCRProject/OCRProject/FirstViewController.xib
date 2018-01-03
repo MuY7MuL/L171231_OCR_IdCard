@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxB-qo-K68">
+                    <rect key="frame" x="42" y="110" width="290" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.72487680578605962" blue="0.043955976913473416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
+                    <state key="normal" title="手持身份证"/>
+                    <connections>
+                        <action selector="onHandClick:" destination="-1" eventType="touchUpInside" id="Asc-eo-TNy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-60-mvu">
+                    <rect key="frame" x="42" y="285" width="290" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.72487680578605962" blue="0.043955976913473416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    <state key="normal" title="身份证down"/>
+                    <connections>
+                        <action selector="idCardDownClick:" destination="-1" eventType="touchUpInside" id="zJO-KV-Zed"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD4-Ev-G7f">
+                    <rect key="frame" x="42" y="373" width="290" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.72487680578605962" blue="0.043955976913473416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="a"/>
+                    <connections>
+                        <action selector="pagerClickAClick:" destination="-1" eventType="touchUpInside" id="DHT-1z-tLi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghq-n6-mPt">
+                    <rect key="frame" x="42" y="468" width="290" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.72487680578605962" blue="0.043955976913473416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="b"/>
+                    <connections>
+                        <action selector="pagerBClick:" destination="-1" eventType="touchUpInside" id="WVH-xk-l6I"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ara-xq-enH">
+                    <rect key="frame" x="42" y="200" width="290" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.72487680578605962" blue="0.043955976913473416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="身份证up"/>
+                    <connections>
+                        <action selector="idCardClick:" destination="-1" eventType="touchUpInside" id="0or-if-mT9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTr-zW-0nK">
+                    <rect key="frame" x="42" y="556" width="290" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="0.78566965538456413" blue="0.11069669787030312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="识别测试"/>
+                    <connections>
+                        <action selector="imageGo:" destination="-1" eventType="touchUpInside" id="RnI-cm-Dup"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
