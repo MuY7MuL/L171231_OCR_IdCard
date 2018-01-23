@@ -73,7 +73,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         loadingDialog = DialogTools.createLoadingDialog(this);
         dialogUtils = new  DialogUtils(this);
 
-
+        //点击事件添加
         mQrcodeScan.setOnClickListener(this);
         mBankCardScan.setOnClickListener(this);
 
